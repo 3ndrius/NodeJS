@@ -23,28 +23,12 @@
     </style>
 </head>
 <body>
-    <% include partials/nav.ejs %>
-    <h1>Profile</h1>
+        <% include partials/nav.ejs %>
+    <h1>Home</h1>
     <h2>
-        Welcome to a profile : <%=person %>
+        
+        Welcome to the best website on the internet.
     </h2>
-    <h3>
-       Name of person <%=data.name %>
-    </h3>
-        Age: <%=data.age %>
-
-    <h3>
-    </h3>
-       Job: <%=data.job %>
-    <h3>
-
-    </h3>
-    <h2>Hobbies</h2>
-    <h4>
-        <% data.hobbies.forEach(function(hobbie){ %>
-           <li><%=hobbie%></li> 
-        <%});%>
-    </h4>
     <p>You won't find better anywere!!</p>
 </body>
 </html>

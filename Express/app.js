@@ -6,11 +6,11 @@ app.set('view engine', 'ejs');
 
 
 app.get('/', (req, res)=>{
-    res.sendFile(__dirname + '/index.html');
+    res.render('index');
 });
 
 app.get('/contact', (req, res)=>{
-    res.sendFile(__dirname +'/contact.html');
+    res.render('contact');
 });
 
 var data = {age:24, name: 'Josh', job:'programmer', hobbies:['eating', 'fishing', 'gaming']};
