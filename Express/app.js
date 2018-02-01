@@ -2,18 +2,22 @@ var express = require('express');
 
 var app = express();
 
+app.set('view engine', 'ejs');
+
 
 app.get('/', (req, res)=>{
-    res.send('This is a home page');
+    res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/contact', (req, res)=>{
-    res.send('This is a contact page');
+    res.sendFile(__dirname +'/contact.html');
 });
+
+var data = {age:24, name: 'Josh', job:'programmer'};
 
 app.get('/profile/:id', (req, res)=> {
-    res.send('You requested to see a profile with a id of: ' + req.params.id);
+    res.render('profile', { person: req.params.id, data: data });
 });
 
 
-app.listen(3000);
+app.listen(3000); 
