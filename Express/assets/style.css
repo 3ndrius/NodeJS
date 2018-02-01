@@ -1,0 +1,12 @@
+body{
+    background: rgb(152, 211, 250);
+    text-align: center;
+    color:white;
+    font-size: 50px;
+
+}
+h1,h2{
+    padding: 3% 15%;
+    text-transform: uppercase;
+}
+
