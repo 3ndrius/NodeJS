@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CONTACT</title>
+    <!-- <style>
+        body{
+            background: rgb(152, 211, 250);
+            text-align: center;
+            color:white;
+            font-size: 50px;
+
+        }
+        h1,h2{
+            padding: 3% 15%;
+            text-transform: uppercase;
+        }
+
+
+
+    </style> -->
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+        <% include partials/nav.ejs %>
+
+    <h1>Contact-Success</h1>
+    <h2>
+        Thx for contact !!!
+    </h2>
+    <p>You contacted with: <%=data.who%></p>
+    <h2>
+        Department:
+    </h2>
+    <p> <%=data.department%></p>
+    <h2>
+        Email:
+    </h2>
+    <p><%=data.email%></p>        
+        
+ 
+
+    <h2>End</h2>
+</body>
+
+</html>
