@@ -2,11 +2,16 @@ body{
     background: rgb(152, 211, 250);
     text-align: center;
     color:white;
-    font-size: 50px;
+    font-size: 40px;
 
 }
 h1,h2{
     padding: 3% 15%;
     text-transform: uppercase;
 }
+#form-contact input {
+    width: 40%;
+    height: 30px;
+}
+
 

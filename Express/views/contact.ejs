@@ -30,7 +30,24 @@
     <h2>
         
         Welcome to the best website on the internet!!.
+        
     </h2>
+    <!-- <h5>
+       Department : <%= quer.dept %>
+    </h5> -->
     <p>You won't find better anywere!!</p>
+    <br>
+    <form id="form-contact">
+        <label for="who">Who do you want to contact</label><br>
+        <input type="text" name="who" value="<%=quer.name%>"><br>
+        <label for="department">Which department?</label><br>
+        <input type="text" name="department" value="<%=quer.dept%>"><br>
+        <label for="email">This is your email</label><br>
+        <input type="email" name="email" ><br><br>
+        <input type="submit" value="Send">    
+    </form>
+
+    <h2>End</h2>
 </body>
+
 </html>
